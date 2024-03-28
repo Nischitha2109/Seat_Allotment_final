@@ -1,0 +1,33 @@
+.welcome-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Optional: Set the height to 100% of the viewport */
+}
+
+.welcome-form {
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centering the form content */
+}
+
+.welcome-buttons button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px; /* Add space between buttons */
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Smooth hover transition */
+}
+
+.welcome-buttons button:hover {
+    background-color: black;
+    color: white;
+}
