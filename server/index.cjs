@@ -6,7 +6,7 @@ const cookieParser = require('cookie-parser');
 const cors = require('cors');
 const { initializeAdmins } = require('./models/Admin.cjs');
 const { initializeSeats } = require('./models/Seatmatrix.cjs');
-// const { initializeUsers } = require('./models/User.cjs');
+const { initializeUsers } = require('./models/User.cjs');
 
 require('dotenv').config();
 
@@ -29,7 +29,7 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 db.once('open', async () => {
     await initializeAdmins();
     await initializeSeats();
-    // await initializeUsers();
+    await initializeUsers();
     console.log('Database initialized successfully');
 });
 
