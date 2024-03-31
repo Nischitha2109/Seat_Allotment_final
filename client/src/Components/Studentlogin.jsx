@@ -27,24 +27,26 @@ export const Studentlogin = () => {
         })
     };
     return (
-        <div className='studentlogin-container'>
-            <form className='studentlogin-form' onSubmit={handleSubmit}>
-                <h2 style={{ textAlign: 'center' }}>Student Login</h2>
-                <label htmlFor="username">Username:</label>
-                <input type="text" placeholder='Username'
-                    onChange={(e) => setUsername(e.target.value)} />
+        <div className="student-hero">
+            <div className='studentlogin-container'>
+                <form className='studentlogin-form' onSubmit={handleSubmit}>
+                    <h2 style={{ textAlign: 'center' }}>Student Login</h2>
+                    <label htmlFor="username">Username:</label>
+                    <input type="text" placeholder='Username'
+                        onChange={(e) => setUsername(e.target.value)} />
 
-                <label htmlFor="email">Email:</label>
-                <input type="email" autoComplete='off' placeholder='Email'
-                    onChange={(e) => setEmail(e.target.value)} />
+                    <label htmlFor="email">Email:</label>
+                    <input type="email" autoComplete='off' placeholder='Email'
+                        onChange={(e) => setEmail(e.target.value)} />
 
-                <label htmlFor="password">Password:</label>
-                <input type="password" placeholder='*******'
-                    onChange={(e) => setPassword(e.target.value)} />
+                    <label htmlFor="password">Password:</label>
+                    <input type="password" placeholder='*******'
+                        onChange={(e) => setPassword(e.target.value)} />
 
-                <button type='submit'>Login</button>
-            </form>
-            <Copyright/>
+                    <button type='submit'>Login</button>
+                </form>
+                <Copyright />
+            </div>
         </div>
     )
 }

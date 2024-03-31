@@ -12,6 +12,10 @@
 import Copyright from './Copyright'
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+// import image3 from "../assets/image3"
+// import image4 from "../assets/image4"
+// import image5 from "../assets/image5"
+
 
 const Studenthome = () => {
     const [user, setUser] = useState(null);
@@ -36,7 +40,10 @@ const Studenthome = () => {
     }, []);
 
     return (
-        <div>
+        <div className="student-home-slideshow">
+            {/* <img src={image5} alt="Image 5" />
+            <img src={image3} alt="Image 3" />
+            <img src={image4} alt="Image 4" /> */}
             <h2>User Details</h2>
             {loading && <p>Loading...</p>}
             {error && <p>Error: {error}</p>}

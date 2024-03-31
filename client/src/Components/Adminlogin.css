@@ -1,33 +1,44 @@
-
 .adminlogin-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    /* Optional: Set the height to 100% of the viewport */
+    background: linear-gradient(to right, #b1f5fa, #037f92); /* Initial gradient */
+    overflow: hidden; /* Hide overflowing gradient */
+    animation: waveAnimation 10s infinite linear; /* Animation for gradient transition */
 }
 
-.adminlogin-form {
+@keyframes waveAnimation {
+    0% {
+        background-position: 0% 50%; /* Initial position */
+    }
+    100% {
+        background-position: 100% 50%; /* Final position */
+    }
+}
+
+.adminlogin-container .adminlogin-form {
     width: 300px;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white; /* Set form background color to white */
 }
 
-label {
+.adminlogin-container .adminlogin-form label {
     display: block;
     margin-bottom: 8px;
 }
 
-input {
+.adminlogin-container .adminlogin-form input {
     width: 100%;
     padding: 8px;
     margin-bottom: 16px;
     box-sizing: border-box;
 }
 
-button {
+.adminlogin-container .adminlogin-form button {
     width: 100%;
     padding: 10px;
     background-color: white;
@@ -37,7 +48,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.adminlogin-container .adminlogin-form button:hover {
     background-color: black;
     color: white;
 }

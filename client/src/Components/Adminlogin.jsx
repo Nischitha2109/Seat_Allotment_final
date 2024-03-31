@@ -16,6 +16,7 @@ export const AdminLogin = () => {
         e.preventDefault()
         Axios.post('http://localhost:3000/authenticate/Adminlogin', { username, email, password }, { withCredentials: true }).then(response => {
             if (response.data.status) {
+                clearCookies();
                 navigate('/Adminhome');
             } else {
                 // Display error message from the backend as alert
@@ -25,6 +26,10 @@ export const AdminLogin = () => {
             console.log(err)
             setErrorMessage('An error occurred. Please try again later.');
         })
+    };
+    const clearCookies = () => {
+        // Clear cookies logic here
+        document.cookie = 'token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
     };
     return (
         <div className='adminlogin-container'>

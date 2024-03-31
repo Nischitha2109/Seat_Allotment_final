@@ -1,0 +1,36 @@
+.student-home-slideshow {
+    width: 100%; /* Ensure slideshow takes up full width */
+    height: 400px; /* Set slideshow height as needed */
+    overflow: hidden; /* Hide overflowing content */
+    position: relative; /* Ensure absolute positioning works correctly */
+  }
+  
+  .student-home-slideshow img {
+    width: 100%; /* Ensure images take up full width */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute; /* Position images absolutely within slideshow */
+    transition: opacity 1s ease-in-out; /* Smooth transition effect */
+  }
+  
+  /* Keyframes for slideshow animation */
+  @keyframes slide {
+    0% { opacity: 0; }
+    25% { opacity: 1; }
+    75% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
+  .student-home-slideshow img:nth-child(1) {
+    animation: slide 12s infinite; /* Adjust duration as needed */
+  }
+  
+  .student-home-slideshow img:nth-child(2) {
+    animation: slide 12s infinite 3s; /* Delay second image by 3 seconds */
+  }
+  
+  .student-home-slideshow img:nth-child(3) {
+    animation: slide 12s infinite 6s; /* Delay third image by 6 seconds */
+  }
+  
+  /* Add more rules for additional images as needed */
+  

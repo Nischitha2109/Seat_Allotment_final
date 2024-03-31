@@ -1,13 +1,33 @@
+.admin {
+  background-image: url('../assets/image1.png'); 
+  background-size: cover;
+  background-position: center top;
+  height: 70vh; 
+  position: relative; 
+}
+
+.content {
+  text-align: center;
+  margin-top: 350px;
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  z-index: 0; 
+}
+
 .button {
-    background-color: gray;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 20px 0px;
-    cursor: pointer;
-  }
-  
+  background-color: rgb(151, 143, 143);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: black; /* Change button background color on hover */
+  color: white;
+}
